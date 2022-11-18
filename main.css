@@ -1,0 +1,117 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 10px;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #ecf0f3;
+  font-family: 'Lato', sans-serif;
+  padding: 1em;
+  overflow: hidden;
+}
+input {
+  caret-color: #af2cfd;
+}
+input,
+label,
+button {
+  display: block;
+  width: 100%;
+  border: none;
+  outline: none;
+}
+input::placeholder {
+  color: grey;
+  font-size: 1.2rem;
+}
+.container {
+  width: 100%;
+  max-width: 35rem;
+  height: auto;
+  margin: auto;
+  padding: 3em;
+  border-radius: 2rem;
+  text-align: center;
+  background-color: #ecf0f3;
+  box-shadow: 14px 14px 20px #cbced1, -14px -14px 20px #fff;
+}
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 100px;
+  margin: auto;
+  border-radius: 50%;
+  box-shadow: 7px 7px 10px #cbced1, -7px -7px 10px #fff;
+}
+.logo img {
+  width: 6rem;
+}
+.logo__title {
+  margin-top: 0.5em;
+  font-size: 2.5rem;
+  font-weight: 900;
+  color: #0078d4;
+  letter-spacing: 1px;
+  user-select: none;
+}
+.form {
+  margin-top: 3em;
+  text-align: start;
+}
+.form label {
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  color: #222;
+  margin-bottom: 1em;
+}
+
+.form label:nth-of-type(2) {
+  margin-top: 1.75em;
+}
+.form label:nth-of-type(3) {
+  margin-top: 1.75em;
+}
+.form input {
+  height: 5rem;
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: #222;
+  padding: 0.75em 1.5em;
+  border-radius: 5rem;
+  background-color: #ecf0f3;
+  box-shadow: inset 6px 6px 5px #cbced1, inset -6px -6px 6px #fff;
+  transition: 250ms ease-in-out;
+}
+.form input:hover,
+.form input:focus {
+  padding-left: 1.25em;
+}
+.form button {
+  font-size: 1.5rem;
+  font-weight: 900;
+  margin-top: 2em;
+  padding: 1em 1.5em;
+  border-radius: 5rem;
+  color: #0078d4;
+  text-transform: uppercase;
+  background-color: #ecf0f3;
+  box-shadow: 6px 6px 5px #cbced1, -6px -6px 6px #fff;
+  transition: 250ms ease-in-out;
+  cursor: pointer;
+}
+.form button:active {
+  box-shadow: inset 6px 6px 5px #cbced1, inset -6px -6px 6px #fff;
+}
